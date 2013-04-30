@@ -54,7 +54,7 @@ STATIC_URL = '/static/'
 ROOT_URLCONF = 'openstack_dashboard.urls'
 
 HORIZON_CONFIG = {
-    'dashboards': ('project', 'admin', 'settings',),
+    'dashboards': ('project', 'dns', 'admin', 'settings',),
     'default_dashboard': 'project',
     'user_home': 'openstack_dashboard.views.get_user_home',
     'ajax_queue_limit': 10,
@@ -137,6 +137,7 @@ INSTALLED_APPS = (
     'compressor',
     'horizon',
     'openstack_dashboard.dashboards.project',
+    'openstack_dashboard.dashboards.dns',
     'openstack_dashboard.dashboards.admin',
     'openstack_dashboard.dashboards.settings',
     'openstack_auth',
